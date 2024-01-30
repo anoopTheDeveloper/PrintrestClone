@@ -1,0 +1,31 @@
+<% include ./partials/header.ejs  %>
+
+
+
+   <div class="container-box">
+      
+        <img class="img" src="https://i.pinimg.com/280x280_RS/fe/7d/ee/fe7deef834e1fafe56f8023ced803ca9.jpg" alt="...">
+        <h2> <%= user.fullname  %> </h2>
+        <p>@<%= user.username %></p>
+        <p style="width: 400px; text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, omnis.</p>
+        <a class="btn" href="/uploadPost">upload Post</a>
+   </div>
+ 
+
+    <div class="container">
+      <% user.post.forEach((posts) =>{   %>
+        <div class="box">
+          <a href="" >
+          <img src="/images/uploads/<%= posts.image  %>" alt="image"></a>
+      <div class="caption">
+        <h2><%= posts.title %></h2>
+        <p><%= posts.postText %></p>
+      </div>
+      </div> 
+      <% }) %>
+
+
+
+
+</body>
+</html>

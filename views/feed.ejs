@@ -1,0 +1,45 @@
+<% include  ./partials/header.ejs  %>
+
+<header>
+<h1>Pinterest Style Image Galley with Responsive Navigation Bar</h1>
+</header> 
+
+
+<div class="container">
+<% post.forEach((posts) =>{   %>
+  <div class="box">
+    <a href="" >
+    <img src="/images/uploads/<%= posts.image  %>" alt="image"></a>
+<div class="caption">
+  <h2 ><%= posts.title %></h2>
+  <p> <%= posts.postText %></p>
+</div>
+</div> 
+<% }) %>
+
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>   
+ <script>
+  const navSlide = () => {
+		const lines = document.querySelector('.lines');
+		const nav = document.querySelector('.navLink');
+		
+		lines.addEventListener('click',() => {
+			nav.classList.toggle('nav-active');
+			
+		//Line Animation
+		lines.classList.toggle('toggle');
+		});
+	   
+	}
+	
+	navSlide();
+ </script>
+</body>
+       
+
+</html>

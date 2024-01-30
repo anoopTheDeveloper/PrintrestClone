@@ -1,0 +1,60 @@
+body{
+  background-image: url("https://images.unsplash.com/photo-1702427725739-4282dcc3e8e0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNTB8fHxlbnwwfHx8fHw%3D");
+  background-color: #cccccc;
+  height: 530px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+.boxer{
+    margin-top:20px;
+    width: 514px;
+    background-color:#dadada;
+    position:absolute ;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    border-radius:20px;
+    box-shadow:2px 2px 10px #fff ,inset  -5px -5px 50px;
+    padding:20px;
+}
+.boxer .flexbox{
+    
+    display:flex;
+    flex:wrap;
+    flex-direction:column;
+}
+
+
+.boxer input:nth-child(1){
+    margin-top:10px;
+    line-height:30px;
+    
+}
+.boxer input:nth-child(2){
+    margin-top:10px;
+    line-height:30px;
+    border:none;
+    border-radius:10px;
+    padding-left:10px
+}
+
+.boxer textarea{
+    resize:none;
+    margin-top:10px;
+    font-size:20px;
+    border:none;
+    border-radius:10px;
+    padding-left:10px
+}
+
+.boxer .button{
+    margin-top:10px;
+    height:30px;
+    border:none;
+    border-radius:10px;
+    background-color:#f30d19;
+    color:#fff;
+    font-weight:700;
+}
